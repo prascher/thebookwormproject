@@ -1,5 +1,5 @@
 # thebookwormproject
-A project dedicated to cataloging books and more.
+A project dedicated to helping catalog books and more.
 
 Use the following command to setup database.
 
