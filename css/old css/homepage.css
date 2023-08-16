@@ -1,0 +1,92 @@
+/* CSS Document */
+@charset "UTF-8";
+
+.header {
+  padding: 90px;
+  text-align: center;
+  background: #f2f2f2;
+  color: Black;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 50px;
+  text-align: center;
+  background: #f2f2f2;
+  color: Black;
+  font-size: 25px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid black;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 80px;
+  height: 36px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    border: 3px white;
+}
+h1 {
+	color: blue;
+	margin-top: 0;
+}
+main {
+    padding: 1em 2em;
+}
+label {
+	float: left;
+    width: 16em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+ */

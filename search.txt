@@ -1,0 +1,19 @@
+    <header><h1>Search</h1></header>
+    <section class="squared">
+    <div class="wrap">
+    <form class="search" action='searchresults.php' method='GET'>
+    <input type="text" class="searchTerm" placeholder="Which book are you looking for?" name='searchtext' id='searchtext'>
+    <select id='searchfield' name='searchfield'>
+    <option value="title">Title</option>
+    <option value="author">Author</option>
+    <option value="publisher">Publisher</option>
+    <option value="pubdate">Published Date</option>
+    <option value="summary">Summary</option>
+    <option value="isbn">ISBN</option>
+    <option value="shelf">Shelf</option>
+    <option value="lentto">Borrower</option>
+    </select>
+    <button type="submit" class="searchButton" id="book_search" placeholder="Search">Search</button>
+    </form>
+    </div>
+    </section>

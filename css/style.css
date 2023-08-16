@@ -1,0 +1,279 @@
+/* CSS Document */
+@charset "UTF-8";
+
+header {
+  padding: 40px;
+  text-align: center;
+  color: Black;
+  font-size: 30px;
+  /*border-left: 2px outset #222222;
+  border-right: 2px outset #222222;*/
+}
+
+nl {
+    background-color: #aaaaaa88;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+nl > li {
+	display: inline;
+}
+
+nl > li > a {
+    border: 1px solid #25252588;
+    color: #ffffff;
+    }
+
+footer.page {
+  padding: 2.5px;
+  text-align: center;
+  background: #3E6C85;
+  color: Black;
+  font-size: 15px;
+  border-radius: 0px 0px 15px 15px;
+  clear: both;
+}
+
+body{
+  background: #856C4C;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  //border-radius: 15px 15px 15px 15px;
+  //border: 2px solid #FFE6C4;
+  //margin: 0;
+  //padding: 10px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid black;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 80px;
+  height: 36px;
+  border: 1px solid black;
+  background: #3E6C85;
+  text-align: center;
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  /* this rule was removed to fix a nasty bug that made the searchbox jump
+  top: 39%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item{
+	padding: 25px;
+	background-color: #aaaaaa88;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 25px;
+}
+
+.items{
+	padding: 15px;
+	margin: 15px;
+	background: #aaaaaa88;
+}
+
+.items > header {
+	font-size: 20px;
+	background-color: #3e6c85;
+	border-radius: 5px;
+}
+
+.items > div {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.itemimg{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	float: left;
+}
+.itemtitle{
+	font-size: 1.5em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+main{
+	border-radius: 15px 15px 0 0;
+	background: #D2B48C;
+	width: 98.625%;
+    padding: 10px;
+}
+
+/*#update {
+background-color: #3e6c85;
+border-radius: 5px;
+padding: 5px;
+font-weight: bold;
+color: #ffffff;
+font-size: 15px;
+float: right;
+}*/
+
+.addbook {
+	width: 30%;
+	margin: auto;
+	margin-top: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+   	background-color: #aaaaaa88;
+}
+
+/*.addbook > input {
+	width: 80%;
+}
+
+.addbook > textarea {
+	width: 75%;
+}*/
+
+.addbook > table {
+	margin: auto;
+}
+
+.blogpost {
+	border: 1px dotted black;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	width: 90%;
+	background-color: #aaaaaa88;
+}
+
+
+.blogpost > header > h3 {
+	font-size: 20px;
+	}
+
+.blogpost > header {
+	background-color: #3e6c85;
+	border-radius: 5px;
+	padding: 10px;
+	}
+
+.button {
+background-color: #3e6c85;
+border-radius: 5px;
+padding: 5px;
+font-weight: bold;
+color: #ffffff;
+font-size: 15px;
+float: right;
+}
+
+.textbox {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+label {
+    font-weight: bold;
+}
+
+#searchfield {
+    border: 3px solid black;
+    border-right: none;
+    font-weight: bold;
+    height: 35px;
+    padding:5px;
+}
+
+#logpage {
+    display:flex;
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    }
+
+#login {
+    border: 1px solid #330000;
+    width: 40%;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    background-color: #aaaaaa88;
+    }
+
+#newuser {
+    width: 40%;
+    border: 1px solid #330000;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    background-color: #aaaaaa88;
+}
+
+.sitem{
+	padding: 25px;
+	background-color: #aaaaaa88;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 30%;
+}
+
+#store {
+    display:flex;
+    width: 100%;
+}
+
+.ritemtitle{
+        clear: both;
+        font-size: .75em;
+}
+
+.ritem{
+        width: 16%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+        float: left;
+}
+
+#tutorials {
+	padding: 10px;
+	margin: 10px;
+}
+
+#tutorials > video {
+	padding: 10px;
+	margin: 10px;
+}
