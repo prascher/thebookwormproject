@@ -1,6 +1,6 @@
 <header class="page"><a href="index.php">
 <h1>My Library</h1>
-<h2>A tool designed to manage my library of books</h2>
+<h2>A tool designed to manage a library of books</h2>
 </a>
 <?php include("menu.txt") ?>
 </header>
