@@ -1,0 +1,3 @@
+<footer class="page">
+<p>&copy; 2023 thebookwormproject all rights reserved</p>
+</footer>

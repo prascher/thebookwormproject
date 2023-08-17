@@ -72,7 +72,5 @@ if (mysqli_query($conn, $query)) {
 <aside class="right">
 </aside>
 </main>
-<footer class="page">
-<p>&copy; 2023 prascher all rights reserved</p>
-</footer>
+<?php include("footer.txt") ?>
 </body>

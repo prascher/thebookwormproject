@@ -88,7 +88,5 @@ mysqli_close($conn);
 </section>
 </aside>
 </main>
-<footer class="page">
-<p>&copy; 2023 prascher all rights reserved</p>
-</footer>
+<?php include("footer.txt")?>
 </body>
