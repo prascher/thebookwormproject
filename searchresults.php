@@ -20,7 +20,7 @@
 <?php
 require_once('conn.php');
 $conn = mysqli_connect($host, $user, $pass, $db);
-switch($_GET['searchfield']) {
+switch($_GET['searchfield']) { // this is where the database searches happen, so if you want to add fields to search add them here.
 	case 'title':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;

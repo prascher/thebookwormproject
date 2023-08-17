@@ -1,4 +1,5 @@
 <nl>
 <li><a href='index.php'>Home</a></li>
 <li><a href='addbook.php'>Add a Book</a></li>
+<!-- if you have other pages for other media types add them here or when they are added to the base project I will try to make sure I do -->
 </nl>

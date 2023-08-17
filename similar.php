@@ -6,7 +6,7 @@ $shelfres = mysqli_query($conn, $shelfquery);
 $row = mysqli_fetch_assoc($shelfres);
 $bookshelf = $row['shelf'];
 $conn = mysqli_connect($host, $user, $pass, $db);
-$query = "select * from books where shelf='".$bookshelf."' and id !='".$_GET['id']."' order by rand() limit 2";
+$query = "select * from books where shelf='".$bookshelf."' and id !='".$_GET['id']."' order by rand() limit 2"; // limited because I didn't like how it looked with the default CSS. And also not showing current book name.
 $result = mysqli_query($conn, $query);
 while($row = mysqli_fetch_assoc($result)){
     $title = $row['title'];

@@ -4,7 +4,7 @@ $conn = mysqli_connect($host, $user, $pass, $db);
 $titlequery = "select title from books where id='".$_GET['id']."'";
 $titleres = mysqli_query($conn, $titlequery);
 $row = mysqli_fetch_assoc($titleres);
-$booktitle = $row['title'];
+$booktitle = $row['title']; // allows title to change with the current book's title.
 ?>
 <!DOCTYPE html>
 <html>
@@ -73,13 +73,13 @@ while($row = mysqli_fetch_assoc($result)){
 	<?php if (array_key_exists('update', $_POST)) {
 	$query1 = "update books set `readon` = current_date() where id=".$_GET['id'].";";
 	$result1 = mysqli_query($conn, $query1);
-	}
+	} //allows you to track when you've read a book in your library by marking it in the database.
 ?>
 <?php include("borrowers.php") ?>
 <?php if (array_key_exists('lendto', $_POST)) {
         $query1 = "update books set `lentto` ='".$_POST['borrower']."' where id='".$_GET['id']."';";
         $result1 = mysqli_query($conn, $query1);
-        }
+        } //allows you to track who has borrowed your books through the database.
 ?>
 </aside>
 </main>

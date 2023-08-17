@@ -51,11 +51,11 @@ $shelf =  addslashes($_POST['shelf']);
 $name = $_FILES['cover']['name'];
 $tmp_name = $_FILES['cover']['tmp_name'];
 $path = 'books/';
-$filename = addslashes($path.$name);
+$filename = addslashes($path.$name); // this allows you to use single or double quotation marks in image names if you want.
 if (!empty($name)){
 if (move_uploaded_file($tmp_name, $path.$name)) {
 $conn = mysqli_connect($host, $user, $pass, $db);
-$query = "INSERT INTO books VALUES (null,'$title','$author','$publisher','$pubdate','$filename','$summary','$isbn','$shelf', null , null);";
+$query = "INSERT INTO books VALUES (null,'$title','$author','$publisher','$pubdate','$filename','$summary','$isbn','$shelf', null , null);"; // this query will need to be changed if you add fields to the database.  See readme for more information on the database struture.
 if (mysqli_query($conn, $query)) {
   echo "<p>New record created successfully</p>";
 } else {

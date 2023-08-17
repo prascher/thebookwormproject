@@ -21,7 +21,7 @@
     <?php
     require_once('conn.php');
     $conn = mysqli_connect($host, $user, $pass, $db);
-    $query = "select title,author,id,img,readon from books where date(readon) >= NOW() - interval 14 day";
+    $query = "select title,author,id,img,readon from books where date(readon) >= NOW() - interval 14 day"; // this interval is what dictates what shows up in your recently read books section, if you read books quickly you may want to lower the number of days, if you don't you may want to raise it.
     $result = mysqli_query($conn, $query);
     while($row = mysqli_fetch_assoc($result)){
         $title = $row['title'];
