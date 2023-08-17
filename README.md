@@ -22,3 +22,18 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci```
 
 ***Please Create database named library or please edit it to fit***
+
+# About the CSS
+The CSS included was designed to give an appearance I though looked good feel free to edit it to better match your taste, if you don't like the colorscheme I did.
+
+# Roadmap of features
+
+Currently, there is no roadmap for new features
+
+There are a few I am considering, but they are not ready yet.
+
+# Issues
+
+I will try to keep an eye on open issues.
+
+However, if I either miss your issue and you figure out a fix or you feel like helping out on this project, feel free to open pull request with your bug fix or improvement.
