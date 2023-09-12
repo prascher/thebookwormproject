@@ -33,8 +33,10 @@
 				<td><textarea name="summary" rows="10" cols="30" class="textbox" placeholder="Summary" ></textarea></textarea></td></tr>
 				<tr><td><label for="isbn">ISBN of the book:</label></td>
 				<td><input type="text" name="isbn" placeholder="ISBN" class="text" /></td></tr>
-				<tr><td><label for="shelf">Shelf Location</label></td>
+				<tr><td><label for="shelf">Shelf Location:</label></td>
 				<td><input name="shelf" placeholder="Shelf where book is located" /></td></tr>
+				<tr><td><label for="sub_category">Sorted on Shelf by:</label></td>
+				<td><input name="sub_category" placeholder="Category sorted by" /></td></tr>
 				<tr><td></td><td><input type="submit" value="Submit" class="button"/></td></tr>
 				</table>
 			</form>
@@ -48,6 +50,7 @@ $pubdate =   addslashes($_POST['pubdate']);
 $summary = addslashes($_POST['summary']);
 $isbn =  addslashes($_POST['isbn']);
 $shelf =  addslashes($_POST['shelf']);
+$shelf =  addslashes($_POST['sub_category']);
 $name = $_FILES['cover']['name'];
 $tmp_name = $_FILES['cover']['tmp_name'];
 $path = 'books/';
