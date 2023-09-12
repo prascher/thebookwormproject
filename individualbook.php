@@ -54,7 +54,7 @@ while($row = mysqli_fetch_assoc($result)){
     echo '<p class="itemisbn">ISBN: '.$ISBN.'</p>';
     echo '<p class="itemsummary">Summary: '.$summary.'</p>';
     echo '<p class="itemlocation">Location: '.$shelf.'</p>';
-    echo '<p class="itempreciselocation">Sorted with: '.$shelf.'</p>';
+    echo '<p class="itempreciselocation">Sorted with: '.$sub_category.'</p>';
     echo '<p class="itemsummary">Borrowed by: '.$lentto.'</p>';
     echo '<p class="itemreadon">Read on: '.$readon.'</p>';
 }
