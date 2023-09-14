@@ -50,7 +50,7 @@ $pubdate =   addslashes($_POST['pubdate']);
 $summary = addslashes($_POST['summary']);
 $isbn =  addslashes($_POST['isbn']);
 $shelf =  addslashes($_POST['shelf']);
-$shelf =  addslashes($_POST['sub_category']);
+$sub_category =  addslashes($_POST['sub_category']);
 $name = $_FILES['cover']['name'];
 $tmp_name = $_FILES['cover']['tmp_name'];
 $path = 'books/';
@@ -58,7 +58,7 @@ $filename = addslashes($path.$name); // this allows you to use single or double 
 if (!empty($name)){
 if (move_uploaded_file($tmp_name, $path.$name)) {
 $conn = mysqli_connect($host, $user, $pass, $db);
-$query = "INSERT INTO books VALUES (null,'$title','$author','$publisher','$pubdate','$filename','$summary','$isbn','$shelf', null , null);"; // this query will need to be changed if you add fields to the database.  See readme for more information on the database struture.
+$query = "INSERT INTO books VALUES (null,'$title','$author','$publisher','$pubdate','$filename','$summary','$isbn','$shelf','$sub_category', null , null);"; // this query will need to be changed if you add fields to the database.  See readme for more information on the database struture.
 if (mysqli_query($conn, $query)) {
   echo "<p>New record created successfully</p>";
 } else {
