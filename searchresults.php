@@ -24,26 +24,29 @@ switch($_GET['searchfield']) { // this is where the database searches happen, so
 	case 'title':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
-        case 'author':
+    case 'author':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
-        case 'publisher':
+    case 'publisher':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
-		case 'pubdate':
+	case 'pubdate':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
-        case 'summary':
+    case 'summary':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
-        case 'isbn':
+    case 'isbn':
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
 	    break;
 	case 'shelf':                                                                                                                               
 		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
-	    break;
-        case 'lentto':
-                $query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
+	        break;
+	case 'sub_category':                                                                                                                               
+		$query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
+	        break;
+    case 'lentto':
+        $query = "select * from books where ".addslashes($_GET['searchfield'])." like '%".addslashes($_GET['searchtext'])."%';";
             break;
 	default:
 		$query = "select * from books where title like '%".addslashes($_GET['searchtext'])."%';";
