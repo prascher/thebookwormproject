@@ -3,7 +3,7 @@ A project dedicated to helping catalog books and more.
 
 Use the following command to setup database.
 
-```CREATE TABLE IF NOT EXISTS `library`.`books` (
+~~```CREATE TABLE IF NOT EXISTS `library`.`books` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(255) NULL DEFAULT NULL,
   `author` VARCHAR(255) NULL DEFAULT NULL,
@@ -19,9 +19,11 @@ Use the following command to setup database.
 ENGINE = InnoDB
 AUTO_INCREMENT = 25
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci```
+COLLATE = utf8mb4_0900_ai_ci```~~
 
-***Please Create database named library or please edit it to fit***
+~~***Please Create database named library or please edit it to fit***~~
+
+***Please run the sql file in the sql folder/directory***
 
 # About the CSS
 The CSS included was designed to give an appearance I though looked good feel free to edit it to better match your taste, if you don't like the colorscheme I did.
