@@ -30,9 +30,12 @@ The CSS included was designed to give an appearance I though looked good feel fr
 
 # Roadmap of features
 
-Currently, there is no roadmap for new features
+New features planned for no later than January 2024, if all goes well:
+* Editing of books
 
-There are a few I am considering, but they are not ready yet.
+~~Currently, there is no roadmap for new features~~
+
+~~There are a few I am considering, but they are not ready yet.~~
 
 # Issues
 
