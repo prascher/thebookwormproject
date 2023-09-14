@@ -11,7 +11,7 @@
     <option value="summary">Summary</option>
     <option value="isbn">ISBN</option>
     <option value="shelf">Shelf</option>
-    <option value="sub_category">Shelf</option>
+    <option value="sub_category">Sorted with</option>
     <option value="lentto">Borrower</option>
     </select>
     <button type="submit" class="searchButton" id="book_search" placeholder="Search">Search</button>
