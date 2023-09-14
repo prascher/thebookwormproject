@@ -53,8 +53,8 @@ while($row = mysqli_fetch_assoc($result)){
     echo '<p class="itempubdate">'.$pubdate.'</p>';
     echo '<p class="itemisbn">ISBN: '.$ISBN.'</p>';
     echo '<p class="itemsummary">Summary: '.$summary.'</p>';
-    echo '<p class="itemlocation">Location: '.$shelf.'</p>';
-    echo '<p class="itempreciselocation">Sorted with: '.$sub_category.'</p>';
+    echo '<p class="itemlocation">Location: <a href="searchresults.php?searchtext='.$shelf.'&searchfield=shelf">'.$shelf.'</a></p>';
+    echo '<p class="itempreciselocation">Sorted with: <a href="searchresults.php?searchtext='.$sub_category.'&searchfield=sub_category">'.$sub_category.'</a></p>';
     echo '<p class="itemsummary">Borrowed by: '.$lentto.'</p>';
     echo '<p class="itemreadon">Read on: '.$readon.'</p>';
 }
