@@ -79,9 +79,14 @@ while($row = mysqli_fetch_assoc($result)){
 ?>
 <?php include("borrowers.php") ?>
 <?php if (array_key_exists('lendto', $_POST)) {
-        $query1 = "update books set `lentto` ='".$_POST['borrower']."' where id='".$_GET['id']."';";
-        $result1 = mysqli_query($conn, $query1);
-        } //allows you to track who has borrowed your books through the database.
+	if ($_POST['borrower'] == ""){
+		$query1 = "update books set `lentto` = NULL where id=".$_GET['id'].";";
+		$result1 = mysqli_query($conn, $query1);
+	} else {
+        	$query1 = "update books set `lentto` ='".$_POST['borrower']."' where id='".$_GET['id']."';";
+        	$result1 = mysqli_query($conn, $query1);
+	}
+	}//allows you to track who has borrowed your books through the database.
 ?>
 </aside>
 </main>
