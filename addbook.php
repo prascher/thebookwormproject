@@ -77,3 +77,4 @@ if (mysqli_query($conn, $query)) {
 </main>
 <?php include("footer.txt") ?>
 </body>
+</html>
