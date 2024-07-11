@@ -92,3 +92,4 @@ while($row = mysqli_fetch_assoc($result)){
 </main>
 <?php include("footer.txt") ?>
 </body>
+</html>

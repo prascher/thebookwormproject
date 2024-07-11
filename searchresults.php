@@ -93,3 +93,4 @@ mysqli_close($conn);
 </main>
 <?php include("footer.txt")?>
 </body>
+</html>

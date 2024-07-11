@@ -50,3 +50,4 @@
 </main>
 <?php include("footer") ?>
 </body>
+</html>
