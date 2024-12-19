@@ -40,6 +40,33 @@
     ?>
 		</div>
 	</section>
+  <header class="squared"><h1>Most Recently Added: </h1></header>
+<section class="items">
+		<div>
+    <?php
+    //require_once('conn.php');
+    //see require_once for previous section.
+)
+    $conn = mysqli_connect($host, $user, $pass, $db);
+    $query = "select title,author,id,img,readon from books where date(created_at) >= NOW() - interval 1 month order by id desc limit 8";
+    $result = mysqli_query($conn, $query);
+    while($row = mysqli_fetch_assoc($result)){
+        $title = $row['title'];
+        $author = $row['author'];
+        $id = $row['id'];
+	$img = $row['img'];
+	$readon = $row['readon'];
+        echo '<div class="ritem">';
+        echo '<a href="individualbook.php?id='.$id.'">';
+        echo '<img class="itemimg" src="'.$img.'">';
+        echo '<h1 class="ritemtitle">'.$title.'</h1>';
+        echo '<p class="ritemauthor">'.$author.'</p></a>';
+        echo '<p class="ritemreadon">'.$readon.'</p></a>';
+        echo '</div>';
+    }
+    ?>
+		</div>
+	</section>
 <footer>
 <p><a href="javascript:window.print()">Print this page</a> |
 </p>
